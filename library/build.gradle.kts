@@ -7,13 +7,13 @@ plugins {
     alias(libs.plugins.vanniktech.mavenPublish)
 }
 
-group = "io.github.kotlin"
-version = "1.0.0"
+group = "io.github.thekekt"
+version = "0.0.0"
 
 kotlin {
     jvm()
     androidLibrary {
-        namespace = "org.jetbrains.kotlinx.multiplatform.library.template"
+        namespace = "io.github.thekekt.kmp.library.template"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
 
@@ -58,7 +58,7 @@ mavenPublishing {
         name = "My library"
         description = "A library."
         inceptionYear = "2024"
-        url = "https://github.com/kotlin/multiplatform-library-template/"
+        url = "https://github.com/thekekt/kmp-library-template/"
         licenses {
             license {
                 name = "XXX"
